@@ -7,13 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <!--
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
-    </StackPanel>
-    -->
-    <Grid Width="480" Height="360" BorderThickness="2" BorderBrush="CadetBlue"
-          Background="LightSkyBlue">
+    <Grid Width="480" Height="320" BorderThickness="2" BorderBrush="CadetBlue"
+          Background="LightBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -22,60 +17,89 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <Grid Row="0" Column="0" Margin="10" BorderThickness="2"  BorderBrush="Silver"  Background="White">
-
-            <!--<Grid>-->
+        <Grid Row="0" Column="0" Height="140">
+            <TextBlock Margin="10,5,10,5" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="16" Text="Windows Master Server"/>
+            <Grid Margin="10,30,10,0" BorderThickness="2"  BorderBrush="Silver" Background="White">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid  Row="0" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock VerticalAlignment="Center" FontSize="40" Margin="5" Text="28.8℃"/>
+                        <TextBlock VerticalAlignment="Center" FontSize="20" Margin="5" Text="47.2%"/>
+                    </StackPanel>
+                </Grid>
+                <Grid  Row="1" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock VerticalAlignment="Bottom" FontSize="20" Margin="5" Text="0400200F" TextAlignment="Center"/>
+                        <ToggleButton x:Name="myButton0" Click="myButton_Click0">監視</ToggleButton>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Row="0" Column="1" Height="140">
+            <TextBlock Margin="10,5,10,5" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="16" Text="Synchrotron"/>
+            <Grid Margin="10,30,10,0" BorderThickness="2"  BorderBrush="Silver"  Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-
-            <Grid VerticalAlignment="Top">
-                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Text="Windows Master Server"/>
+                <Grid  Row="0" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock VerticalAlignment="Center" FontSize="40" Margin="5" Text="29.3℃"/>
+                        <TextBlock VerticalAlignment="Center" FontSize="20" Margin="5" Text="48.4%"/>
+                    </StackPanel>
+                </Grid>
+                <Grid  Row="1" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock VerticalAlignment="Bottom" FontSize="20" Margin="5" Text="04117EC8" TextAlignment="Center"/>
+                        <ToggleButton x:Name="myButton1" Click="myButton_Click0">監視</ToggleButton>
+                    </StackPanel>
+                </Grid>
             </Grid>
-
-            <Grid VerticalAlignment="Center">
+        </Grid>
+        <Grid Row="1" Column="0" Height="140">
+            <TextBlock Margin="10,5,10,5" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="16" Text="Particle Accelerator"/>
+            <Grid Margin="10,30,10,0" BorderThickness="2"  BorderBrush="Silver"  Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid  Row="0" VerticalAlignment="Top">
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock VerticalAlignment="Bottom" Text="T0"/>
-                        <TextBlock VerticalAlignment="Bottom" Text="T0-2"/>
-                        <TextBlock VerticalAlignment="Bottom" Text="TextBlock0" TextAlignment="Center"/>
+                        <TextBlock VerticalAlignment="Center" FontSize="40" Margin="5" Text="28.5℃"/>
+                        <TextBlock VerticalAlignment="Center" FontSize="20" Margin="5" Text="42.0%"/>
                     </StackPanel>
                 </Grid>
-
-                <Grid VerticalAlignment="Bottom">
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Text="BOTTOM" TextAlignment="Center"/>
-                        <ToggleButton x:Name="myButton0" Click="myButton_Click0">OFF</ToggleButton>
+                <Grid  Row="1" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock VerticalAlignment="Bottom" FontSize="20" Margin="5" Text="0502E76B" TextAlignment="Center"/>
+                        <ToggleButton x:Name="myButton2" Click="myButton_Click0">監視</ToggleButton>
                     </StackPanel>
                 </Grid>
-
-            <!--</Grid>-->
+            </Grid>
         </Grid>
-        <Grid Row="0" Column="1" Margin="10" BorderThickness="2" BorderBrush="Silver">
-            <TextBlock Text="T1"/>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="TextBlock1" TextAlignment="Center"/>
-                <ToggleButton x:Name="myButton1" Click="myButton_Click1">OFF</ToggleButton>
-            </StackPanel>
-            <TextBlock Text="BOTTOM" TextAlignment="Center"/>
-        </Grid>
-        <Grid Row="1" Column="0" Margin="10" BorderThickness="2" BorderBrush="Silver">
-            <TextBlock Text="T2"/>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="TextBlock2" TextAlignment="Center"/>
-                <ToggleButton x:Name="myButton2" Click="myButton_Click2">OFF</ToggleButton>
-            </StackPanel>
-            <TextBlock Text="BOTTOM" TextAlignment="Center"/>
-        </Grid>
-        <Grid Row="1" Column="1" Margin="10" BorderThickness="2" BorderBrush="Silver">
-            <TextBlock Text="T3" TextAlignment="Center"/>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="TextBlock3" TextAlignment="Center"/>
-                <ToggleButton x:Name="myButton3" Click="myButton_Click3">OFF</ToggleButton>
-            </StackPanel>
-            <TextBlock Text="BOTTOM" TextAlignment="Center"/>
+        <Grid Row="1" Column="1" Height="140">
+            <TextBlock Margin="10,5,10,5" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="16" Text="Liebig Condenser"/>
+            <Grid Margin="10,30,10,0" BorderThickness="2"  BorderBrush="Silver"  Background="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid  Row="0" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock VerticalAlignment="Center" FontSize="40" Margin="5" Text="28.9℃"/>
+                        <TextBlock VerticalAlignment="Center" FontSize="20" Margin="5" Text="---"/>
+                    </StackPanel>
+                </Grid>
+                <Grid  Row="1" VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock VerticalAlignment="Bottom" FontSize="20" Margin="5" Text="0400070A" TextAlignment="Center"/>
+                        <ToggleButton x:Name="myButton3" Click="myButton_Click0">監視</ToggleButton>
+                    </StackPanel>
+                </Grid>
+            </Grid>
         </Grid>
     </Grid>
 </Window>

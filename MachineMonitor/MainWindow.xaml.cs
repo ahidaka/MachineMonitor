@@ -32,19 +32,19 @@ namespace MachineMonitor
 
         private void myButton_Click0(object sender, RoutedEventArgs e)
         {
-            myButton0.Content = "ON";
+            //myButton0.Content = "ON";
         }
         private void myButton_Click1(object sender, RoutedEventArgs e)
         {
-            myButton1.Content = "ON";
+            //myButton1.Content = "ON";
         }
         private void myButton_Click2(object sender, RoutedEventArgs e)
         {
-            myButton2.Content = "ON";
+            //myButton2.Content = "ON";
         }
         private void myButton_Click3(object sender, RoutedEventArgs e)
         {
-            myButton3.Content = "ON";
+            //myButton3.Content = "ON";
         }
     }
 }
